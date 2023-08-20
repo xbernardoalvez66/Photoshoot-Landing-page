@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.box1{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.box2{
+    width: 70%;
+    height: 100%;
+    background-color: #cfcccc;
+}
+
+.box3{
+    width: 40%;
+    height: 70%;
+    background-color: #b4b0b0;
+    background-image: url(a.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0,0.02), 
+    0 6.7px 5.3px rgba(0, 0, 0,0.028),
+    0 12.5px 10px rgba(0, 0, 0,0.035),
+    0 22.3px 17.9px rgba(0, 0, 0,0.042),
+    0 41.8px 33.4px rgba(0, 0, 0,0.05),
+    0 100px 80px rgba(0, 0, 0,0.07);
+}
+
+.box1 img{
+    margin-top: -4px;
+    margin-left: 4px;
+    filter: saturate(2);
+    width: 125px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav .bar{
+    padding: 12px 25px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-top: 10px;
+    font-weight: 600;
+    color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+.nav .bar:hover{
+    background-color: #383838;
+    color: white;
+}
+
+.box2 h1{
+    font-family: 'Cinzel';
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #343434;
+    position: relative;
+    top: 170px;
+    left: 170px;
+}
+
+.box2 p{
+    color: #343434;
+    position: relative;
+    top: 200px;
+    left: 170px;
+    padding-right: 190px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 25px;
+}
+
+button{
+    position: relative;
+    left: 171px;
+    top: 221px;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 600;
+    color: #343434;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Open Sans';
+}
+
+button:hover{
+    background: #343434;
+    color: white;
+}
